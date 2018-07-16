@@ -1,0 +1,29 @@
+## Running the pipeline
+
+The script [Pipeline.sh](https://github.com/hzi-bifo/FrechetTreeDistance/blob/master/Software/Pipeline.sh) performs the tree inference and phylogeographic reconstruction, calculates the discrete Fréchet distances and visualizes them using multidimensional scaling.
+
+### 1) Requirements
+
+The pipeline is implemented in bash and combines different R scripts. Necessary software packages (and versions this software was tested for) are:
+* R and Rscript (3.4.4)
+* R packages: ape (5.1), phangorn (2.4.0), ggplot2 (2.2.1), MASS (7.3-50)
+
+### 2) Input
+
+The input files used in this manuscript are located in the [Data/Raw directory](https://github.com/hzi-bifo/FrechetTreeDistance/tree/master/Data/Raw).
+
+The necessary input for the pipeline is:
+* [A multiple sequence alignment](https://github.com/hzi-bifo/FrechetTreeDistance/blob/master/Data/Raw/Wallace_H5N1_HA.aln) in fasta format. It needs to be named *\[PREFIX\].aln*.
+* [A tab delimited file](https://github.com/hzi-bifo/FrechetTreeDistance/blob/master/Data/Raw/Wallace_H5N1_HA.locations.txt) with one column called "id" and one column called "location" listing the sequence identifier and the assigned location for the sequence. It needs to be named *\[PREFIX\].locations.txt*.
+* [A csv file](https://github.com/hzi-bifo/FrechetTreeDistance/blob/master/Data/Raw/distance.matrix.csv) containing the distance matrix with distances between all observed locations and including the locations as row and column names.
+* The identifier of the sequence that that will be used to root all trees. This sequence should be an outgroup and is removed from the dataset after rooting.
+
+To run the pipeline on different input data, edit the lines 5 (prefix), 6 (distance matrix) and 7 (root sequence) in [Pipeline.sh](https://github.com/hzi-bifo/FrechetTreeDistance/blob/master/Software/Pipeline.sh).
+
+### 3) Running the pipeline 
+
+To run the analysis and replicate all results from the manuscript, change into the folder containing the [raw data](https://github.com/hzi-bifo/FrechetTreeDistance/tree/master/Data/Raw) and run
+> bash path/to/folder/Pipeline.sh
+
+
+## Calculating the Fréchet tree distance
