@@ -16,7 +16,7 @@ rm -f $distancefile
 # creates .phy and .annotation.txt files for Parsimony, UPGMA, NJ, MLJC, MLGTR
 echo "----- 1 Create trees and infer ancestral character states -----"
 echo
-Rscript $software_dir"/create_trees.R" $name"_cds_mapped_c.aln" $name"_location_map.txt" $outgroup
+Rscript $software_dir"/create_trees.R" $name".aln" $name".locations.txt" $outgroup
 
 # calculate pairwise frechet distances
 # the script gets called for each pairwise comparison and results are written to the command line as well as the output file
