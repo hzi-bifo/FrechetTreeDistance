@@ -25,5 +25,13 @@ To run the pipeline on different input data, edit the lines 5 (prefix), 6 (dista
 To run the analysis and replicate all results from the manuscript, change into the folder containing the [raw data](https://github.com/hzi-bifo/FrechetTreeDistance/tree/master/Data/Raw) and run
 > bash path/to/folder/Pipeline.sh
 
+### 4) Output
+
+The pipeline produces the following output files in the directory where the script was called:
+* Five phylogenetic trees (*\[method\].phy*) in Newick format in a folder called trees. All nodes in these trees are labeled.
+* For each tree the corresponding phylogeographic reconstruction (*\[method\].annotation.txt*) given in a tab delimited file with a column called "label" containing the node label and a column called "location" containing the inferred location (in case of internal nodes) or the given location (in case of leaf nodes).
+* A text file (*pairwiseRFDistances.txt*) containing Robinson-Foulds distances between all trees.
+* A text file (*pairwiseFrechetDistances.txt*) containing discrete Fréchet tree distances between all trees.
+* A png image (*pairwiseFrechetDistances.png*) containing the multidimensional scaling plot.
 
 ## Calculating the Fréchet tree distance
