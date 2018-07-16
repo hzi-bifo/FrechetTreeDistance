@@ -1,0 +1,380 @@
+label	location
+f0dp179	Hebei
+f0dp136	Guangxi
+f0dp139	Guangxi
+f0dp148	Guangxi
+f0dp145	Guangxi
+f0dp144	Guangxi
+f0dp146	Guangxi
+f0dp147	Guangxi
+f0dp137	Guangxi
+f0dp143	Guangxi
+f0dp142	Guangxi
+f0dp138	Guangxi
+f0dp140	Guangxi
+f0dp141	Guangxi
+f0dp189	Fujian
+f0dp159	Hunan
+f0dp156	Hunan
+f0dp158	Hunan
+f0dp157	Hunan
+f0dp161	Hunan
+f0dp160	Hunan
+f0dp94	Guangdong
+f0dp188	Guangdong
+f0dp53	Guangdong
+f0dp177	Vietnam
+f0dp166	Hong Kong
+f0dp167	Hong Kong
+f0dp134	Guangxi
+f0dp54	Guangdong
+f0dp152	Guangxi
+f0dp153	Guangxi
+f0dp154	Guangxi
+f0dp151	Guangxi
+f0dp155	Guangxi
+f0dp150	Guangxi
+f0dp149	Guangxi
+f0dp162	Hunan
+f0dp163	Hunan
+f0dp30	Guangxi
+f0dp50	Henan
+f0dp122	Novosibirsk
+f0dp128	Mongolia
+f0dp120	Novosibirsk
+f0dp183	Astrakhan
+f0dp185	Astrakhan
+f0dp182	Astrakhan
+f0dp131	Mongolia
+f0dp129	Mongolia
+f0dp130	Mongolia
+f0dp125	Novosibirsk
+f0dp98	Qinghai
+f0dp124	Novosibirsk
+f0dp101	Qinghai
+f0dp99	Qinghai
+f0dp100	Qinghai
+f0dp93	Qinghai
+f0dp186	Qinghai
+f0dp187	Qinghai
+f0dp92	Qinghai
+f0dp55	Guangdong
+f0dp42	Guangdong
+f0dp57	Japan
+f0dp56	Japan
+f0dp60	Japan
+f0dp59	Japan
+f0dp123	Japan
+f0dp58	Japan
+f0dp174	Indonesia
+f0dp117	Henan
+f0dp118	Henan
+f0dp169	Indonesia
+f0dp172	Indonesia
+f0dp171	Indonesia
+f0dp170	Indonesia
+f0dp173	Indonesia
+f0dp49	Henan
+f0dp165	Guangdong
+f0dp95	Guangdong
+f0dp132	Fujian
+f0dp133	Fujian
+f0dp96	Japan
+f0dp164	Guangdong
+f0dp91	Henan
+f0dp4	Hong Kong
+f0dp17	Hong Kong
+f0dp16	Hong Kong
+f0dp15	Hong Kong
+f0dp6	Hong Kong
+f0dp13	Hong Kong
+f0dp14	Hong Kong
+f0dp3	Hong Kong
+f0dp12	Hong Kong
+f0dp11	Hong Kong
+f0dp10	Hong Kong
+f0dp21	Hong Kong
+f0dp20	Hong Kong
+f0dp8	Hong Kong
+f0dp9	Hong Kong
+f0dp7	Hong Kong
+f0dp22	Hong Kong
+f0dp19	Hong Kong
+f0dp5	Hong Kong
+f0dp2	Hong Kong
+f0dp1	Hong Kong
+f0dp51	Henan
+f0dp48	Hunan
+f0dp52	Henan
+f0dp44	Fujian
+f0dp121	Vietnam
+f0dp23	Vietnam
+f0dp115	Kamphaeng Phet
+f0dp116	Kamphaeng Phet
+f0dp127	Kamphaeng Phet
+f0dp126	Kamphaeng Phet
+f0dp175	Vietnam
+f0dp45	Vietnam
+f0dp70	Phitsanulok
+f0dp71	Phitsanulok
+f0dp61	Vietnam
+f0dp89	Nakon Sawan
+f0dp87	Kamphaeng Phet
+f0dp88	Nakon Sawan
+f0dp90	Kamphaeng Phet
+f0dp66	Nakon Sawan
+f0dp176	Vietnam
+f0dp178	Vietnam
+f0dp62	Vietnam
+f0dp114	Vietnam
+f0dp69	Uthai Than
+f0dp81	Kamphaeng Phet
+f0dp112	Bangkok
+f0dp67	Kamphaeng Phet
+f0dp68	Kamphaeng Phet
+f0dp65	Phitsanulok
+f0dp63	Kamphaeng Phet
+f0dp64	Nakon Sawan
+f0dp109	Bangkok
+f0dp83	Nakon Sawan
+f0dp85	Nakon Sawan
+f0dp80	Uthai Than
+f0dp107	Bangkok
+f0dp111	Bangkok
+f0dp106	Nakon Sawan
+f0dp110	Bangkok
+f0dp108	Bangkok
+f0dp102	Bangkok
+f0dp104	Bangkok
+f0dp113	Nakon Sawan
+f0dp73	Uthai Than
+f0dp84	Nakon Sawan
+f0dp76	Phitsanulok
+f0dp78	Nakon Sawan
+f0dp82	Phitsanulok
+f0dp103	Bangkok
+f0dp105	Nakon Sawan
+f0dp77	Uthai Than
+f0dp72	Uthai Than
+f0dp74	Uthai Than
+f0dp75	Nakon Sawan
+f0dp79	Phitsanulok
+f0dp31	Guangxi
+f0dp29	Guangdong
+f0dp18	Guangdong
+f0dp36	Shanghai
+f0dp28	Guangdong
+f0dp26	Fujian
+f0dp40	Guangxi
+f0dp43	Hong Kong
+f0dp168	Hong Kong
+f0dp46	Hong Kong
+f0dp47	Hong Kong
+f0dp97	Hong Kong
+f0dp34	Shanghai
+f0dp41	Shanghai
+f0dp35	Shanghai
+f0dp181	Hebei
+f0dp32	Guangxi
+f0dp24	Fujian
+f0dp25	Fujian
+f0dp119	Henan
+f0dp38	Guangdong
+f0dp39	Guangdong
+f0dp33	Shanghai
+f0dp37	Fujian
+f0dp27	Guangdong
+f0dp180	Hebei
+f0dp190	Guangxi
+f0dp135	Guangxi
+f0dp184	Astrakhan
+f0dp86	Uthai Than
+intNode1	Guangdong
+intNode2	Guangdong
+intNode3	Henan
+intNode4	Guangdong
+intNode5	Guangdong
+intNode6	Guangdong
+intNode7	Guangdong
+intNode8	Guangdong
+intNode9	Guangdong
+intNode10	Hong Kong
+intNode11	Hong Kong
+intNode12	Guangdong
+intNode13	Guangdong
+intNode14	Hong Kong
+intNode15	Vietnam
+intNode16	Vietnam
+intNode17	Vietnam
+intNode18	Vietnam
+intNode19	Vietnam
+intNode20	Vietnam
+intNode21	Vietnam
+intNode22	Bangkok
+intNode23	Bangkok
+intNode24	Bangkok
+intNode25	Bangkok
+intNode26	Bangkok
+intNode27	Bangkok
+intNode28	Bangkok
+intNode29	Bangkok
+intNode30	Bangkok
+intNode31	Bangkok
+intNode32	Kamphaeng Phet
+intNode33	Kamphaeng Phet
+intNode34	Kamphaeng Phet
+intNode35	Kamphaeng Phet
+intNode36	Bangkok
+intNode37	Nakon Sawan
+intNode38	Nakon Sawan
+intNode39	Nakon Sawan
+intNode40	Nakon Sawan
+intNode41	Nakon Sawan
+intNode42	Nakon Sawan
+intNode43	Nakon Sawan
+intNode44	Nakon Sawan
+intNode45	Uthai Than
+intNode46	Uthai Than
+intNode47	Nakon Sawan
+intNode48	Nakon Sawan
+intNode49	Nakon Sawan
+intNode50	Uthai Than
+intNode51	Nakon Sawan
+intNode52	Vietnam
+intNode53	Vietnam
+intNode54	Vietnam
+intNode55	Vietnam
+intNode56	Kamphaeng Phet
+intNode57	Kamphaeng Phet
+intNode58	Kamphaeng Phet
+intNode59	Nakon Sawan
+intNode60	Vietnam
+intNode61	Nakon Sawan
+intNode62	Phitsanulok
+intNode63	Vietnam
+intNode64	Kamphaeng Phet
+intNode65	Kamphaeng Phet
+intNode66	Kamphaeng Phet
+intNode67	Hong Kong
+intNode68	Hong Kong
+intNode69	Guangdong
+intNode70	Guangdong
+intNode71	Guangdong
+intNode72	Guangdong
+intNode73	Guangxi
+intNode74	Guangxi
+intNode75	Guangxi
+intNode76	Guangxi
+intNode77	Guangxi
+intNode78	Guangxi
+intNode79	Guangxi
+intNode80	Hunan
+intNode81	Guangxi
+intNode82	Guangdong
+intNode83	Guangxi
+intNode84	Hong Kong
+intNode85	Guangxi
+intNode86	Guangxi
+intNode87	Guangxi
+intNode88	Guangdong
+intNode89	Hunan
+intNode90	Hunan
+intNode91	Hunan
+intNode92	Hunan
+intNode93	Hunan
+intNode94	Guangdong
+intNode95	Henan
+intNode96	Henan
+intNode97	Indonesia
+intNode98	Indonesia
+intNode99	Indonesia
+intNode100	Indonesia
+intNode101	Indonesia
+intNode102	Guangdong
+intNode103	Novosibirsk
+intNode104	Novosibirsk
+intNode105	Novosibirsk
+intNode106	Novosibirsk
+intNode107	Novosibirsk
+intNode108	Mongolia
+intNode109	Mongolia
+intNode110	Mongolia
+intNode111	Astrakhan
+intNode112	Astrakhan
+intNode113	Astrakhan
+intNode114	Novosibirsk
+intNode115	Qinghai
+intNode116	Qinghai
+intNode117	Qinghai
+intNode118	Qinghai
+intNode119	Qinghai
+intNode120	Qinghai
+intNode121	Qinghai
+intNode122	Guangdong
+intNode123	Japan
+intNode124	Japan
+intNode125	Japan
+intNode126	Japan
+intNode127	Japan
+intNode128	Guangdong
+intNode129	Guangdong
+intNode130	Fujian
+intNode131	Fujian
+intNode132	Fujian
+intNode133	Guangxi
+intNode134	Guangxi
+intNode135	Guangxi
+intNode136	Guangxi
+intNode137	Guangxi
+intNode138	Guangxi
+intNode139	Guangxi
+intNode140	Guangxi
+intNode141	Guangxi
+intNode142	Guangxi
+intNode143	Guangxi
+intNode144	Guangxi
+intNode145	Henan
+intNode146	Henan
+intNode147	Henan
+intNode148	Henan
+intNode149	Henan
+intNode150	Guangdong
+intNode151	Guangdong
+intNode152	Guangdong
+intNode153	Guangdong
+intNode154	Guangdong
+intNode155	Hong Kong
+intNode156	Hong Kong
+intNode157	Hong Kong
+intNode158	Hong Kong
+intNode159	Hong Kong
+intNode160	Hong Kong
+intNode161	Hong Kong
+intNode162	Hong Kong
+intNode163	Hong Kong
+intNode164	Hong Kong
+intNode165	Hong Kong
+intNode166	Hong Kong
+intNode167	Hong Kong
+intNode168	Hong Kong
+intNode169	Hong Kong
+intNode170	Hong Kong
+intNode171	Hong Kong
+intNode172	Hong Kong
+intNode173	Hong Kong
+intNode174	Hong Kong
+intNode175	Guangdong
+intNode176	Guangdong
+intNode177	Guangdong
+intNode178	Guangdong
+intNode179	Guangdong
+intNode180	Guangdong
+intNode181	Guangdong
+intNode182	Guangxi
+intNode183	Shanghai
+intNode184	Shanghai
+intNode185	Shanghai
+intNode186	Fujian
+intNode187	Fujian
+intNode188	Fujian
+intNode189	Fujian
