@@ -24,8 +24,8 @@ for (i in 1:nrow(values)){
 }
 
 # perform metric multidimensional scaling (principal component analysis)
-fit_metric <- cmdscale(values.matrix, eig = TRUE, k = 2)
-mds_data <- data.frame(x = fit_metric$points[, 1], y = fit_metric$points[, 2], label = rownames(fit_metric$points))
+#fit_metric <- cmdscale(values.matrix, eig = TRUE, k = 2)
+#mds_data <- data.frame(x = fit_metric$points[, 1], y = fit_metric$points[, 2], label = rownames(fit_metric$points))
 
 # nonmetric multidimensional scaling
 fit_nonmetric <- isoMDS(values.matrix, y = cmdscale(values.matrix, k = 2), k = 2)
@@ -37,5 +37,3 @@ ggplot(mds_data, aes(x,y)) +
   geom_point() +
   geom_text(aes(x=x-1000, y=y+500, label=label)) +
   coord_fixed(ratio=1)
-
-#ggsave("Distances.png", width = 8, height = 3)
