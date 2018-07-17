@@ -57,7 +57,7 @@ The two trees that are compared should be inferred for the same taxa. Both the n
 
 ### 3) Running the script
 
-The script can be called from the command line using:
+In the folder where the data is located, the script can be called from the command line using:
 > Rscript path/to/folder/FrechetTreeDistance.R \[prefix1\] \[prefix2\] \[distance matrix\]
 
 The discrete Fréchet tree distance between the two given trees is output on the command line.
