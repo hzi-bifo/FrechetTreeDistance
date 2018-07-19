@@ -197,9 +197,9 @@ distance_matrix <- as.matrix(read.csv(distances, header = TRUE, row.names = 1, c
 ### test input ###
 
 # check if all locations are present in the distance matrix
-test <- check_dist_matrix(distance_matrix, c(reference_data[[2]]$location, test_data[[2]]$location))
+test_loc <- check_dist_matrix(distance_matrix, c(reference_data[[2]]$location, test_data[[2]]$location))
 
-if (test == 0){
+if (test_loc == 0){
   stop("One or more locations are not in the distance matrix. Check your input.")
 }
 
@@ -208,6 +208,15 @@ symmetric <- isSymmetric(distance_matrix)
 
 if (symmetric == FALSE){
   stop("Distance matrix is not symmetric. Check your input.")
+}
+
+# check if sequence names in tree and annotation are equal
+if (!identical(sort(c(reference_data[[1]]$tip.label, reference_data[[1]]$node.label)),sort(reference_data[[2]]$label))){
+  stop(paste("Sequence ids in tree and annotation are different in files", reference,". Check your input."))
+}
+
+if (!identical(sort(c(test_data[[1]]$tip.label, test_data[[1]]$node.label)),sort(test_data[[2]]$label))){
+  stop(paste("Sequence ids in tree and annotation are different in files", test,". Check your input."))
 }
 
 ### calculate distances ###

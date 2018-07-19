@@ -71,6 +71,8 @@ root_tree <- function(phylo, outgroup){
 
 save_tree <- function(result, filename){
   write.tree(result$tree, paste(filename,".phy", sep=""))
+  # write.tree replaces spaces in sequence names by underscores - do the same with annotation file
+  result$annotation$label <- gsub(" ", "_", result$annotation$label)
   write.table(result$annotation, paste(filename, ".annotation.txt", sep=""), quote=FALSE, row.names=FALSE, sep="\t")
 }
 
@@ -86,6 +88,11 @@ outgroup <- args[3]
 # load alignment as phyDat object
 seq_data <- read.phyDat(alignment_file, format = "fasta")
 
+# test if outgroup is present in alignment
+if (!outgroup %in% names(seq_data)){
+  stop(paste('The outgroup', outgroup, 'is not present in the aligned sequence file.'))
+}
+
 # tree inference: parsimony, distance matrix, maximum likelihood
 tree_UPGMA <- infer_tree(seq_data, "UPGMA")
 tree_NJ <- infer_tree(seq_data, "NJ")
@@ -94,11 +101,11 @@ tree_MLJC <- infer_tree(seq_data, "ML", "JC")
 tree_MLGTR <- infer_tree(seq_data, "ML", "GTR")
 
 # root trees and remove outgroup
-rooted_UPGMA <- root_tree(tree_UPGMA, "f0dp0")
-rooted_NJ <- root_tree(tree_NJ, "f0dp0")
-rooted_Fitch <- root_tree(tree_Fitch, "f0dp0")
-rooted_MLJC <- root_tree(tree_MLJC, "f0dp0")
-rooted_MLGTR <- root_tree(tree_MLGTR, "f0dp0")
+rooted_UPGMA <- root_tree(tree_UPGMA, outgroup)
+rooted_NJ <- root_tree(tree_NJ, outgroup)
+rooted_Fitch <- root_tree(tree_Fitch, outgroup)
+rooted_MLJC <- root_tree(tree_MLJC, outgroup)
+rooted_MLGTR <- root_tree(tree_MLGTR, outgroup)
 
 tree_list <- c(rooted_UPGMA, rooted_NJ, rooted_Fitch, rooted_MLJC, rooted_MLGTR)
 names <- c("UPGMA", "NJ", "Parsimony", "MLJC", "MLGTR")
@@ -122,6 +129,13 @@ write.table(test.topology, "pairwiseRFDistances.txt", quote=FALSE, sep="\t")
 # add ancestral character states
 
 location_info <- read.table(locations, header=TRUE, sep="\t")
+
+# test if ids in location info match ids in sequence file
+for (seq in rooted_UPGMA$tip.label){
+  if (! seq %in% location_info$id){
+    stop(paste('The sequence', seq, 'is not present in the location file.'))
+  }
+}
 
 #observed locations
 tipdata <- as.matrix(location_info$location)
