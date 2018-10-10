@@ -108,7 +108,7 @@ frechetCoupling <- function(path1, path2, distance_matrix, sum_or_max = "sum") {
   return(list("firstseq" = seq1, "secondseq" = seq2))
 }
 
-calc_distance <- function(reference_data, test_data, distance_matrix){
+calc_distance <- function(reference_data, test_data, distance_matrix, adjustment){
   # test if tip labels are equal
   if(identical(sort(test_data[[1]]$tip.label), sort(reference_data[[1]]$tip.label))){
     tips <- reference_data[[1]]$tip.label
@@ -154,9 +154,13 @@ calc_distance <- function(reference_data, test_data, distance_matrix){
   }
   
   # frechet distance for tree: divide costs per node by number of paths and take sum
-  dist_test <- sum(cost_tree_test[,1] / cost_tree_test[,2], na.rm = TRUE)
-  dist_ref <- sum(cost_tree_ref[,1] / cost_tree_ref[,2], na.rm = TRUE)
-  
+  if (adjustment == TRUE){
+    dist_test <- sum(cost_tree_test[,1] / cost_tree_test[,2], na.rm = TRUE)
+    dist_ref <- sum(cost_tree_ref[,1] / cost_tree_ref[,2], na.rm = TRUE)
+  } else {
+    dist_test <- sum(cost_tree_test[,1], na.rm = TRUE)
+    dist_ref <- sum(cost_tree_ref[,1], na.rm = TRUE)
+  }
   # average between distances for ref and test
   return(mean(c(dist_test,dist_ref)))
 }
@@ -186,6 +190,14 @@ args = commandArgs(trailingOnly=TRUE)
 reference <- args[1]
 test <- args[2]
 distances <- args[3]
+adjustment <- args[4]
+
+if (is.na(adjustment)){
+  adjustment = TRUE
+}
+if (adjustment != TRUE && adjustment != FALSE){
+  stop("Invalid argument. Adjustment must be set to TRUE or FALSE.")
+}
 
 ### read files ###
 
@@ -221,5 +233,5 @@ if (!identical(sort(c(test_data[[1]]$tip.label, test_data[[1]]$node.label)),sort
 
 ### calculate distances ###
 
-dist <- calc_distance(reference_data, test_data, distance_matrix)
+dist <- calc_distance(reference_data, test_data, distance_matrix, adjustment)
 cat(dist) # write output to command line
