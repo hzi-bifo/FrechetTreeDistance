@@ -1,0 +1,380 @@
+label	location
+f0dp179	Northern China
+f0dp136	Southern China
+f0dp139	Southern China
+f0dp148	Southern China
+f0dp145	Southern China
+f0dp144	Southern China
+f0dp146	Southern China
+f0dp147	Southern China
+f0dp137	Southern China
+f0dp143	Southern China
+f0dp142	Southern China
+f0dp138	Southern China
+f0dp140	Southern China
+f0dp141	Southern China
+f0dp189	Southern China
+f0dp159	Southern China
+f0dp156	Southern China
+f0dp158	Southern China
+f0dp157	Southern China
+f0dp161	Southern China
+f0dp160	Southern China
+f0dp94	Southern China
+f0dp188	Southern China
+f0dp53	Southern China
+f0dp177	Vietnam
+f0dp166	Southern China
+f0dp167	Southern China
+f0dp134	Southern China
+f0dp135	Southern China
+f0dp54	Southern China
+f0dp152	Southern China
+f0dp153	Southern China
+f0dp154	Southern China
+f0dp151	Southern China
+f0dp155	Southern China
+f0dp150	Southern China
+f0dp149	Southern China
+f0dp162	Southern China
+f0dp163	Southern China
+f0dp30	Southern China
+f0dp50	Northern China
+f0dp122	Novosibirsk
+f0dp128	Mongolia
+f0dp120	Novosibirsk
+f0dp183	Astrakhan
+f0dp184	Astrakhan
+f0dp185	Astrakhan
+f0dp182	Astrakhan
+f0dp131	Mongolia
+f0dp129	Mongolia
+f0dp130	Mongolia
+f0dp125	Novosibirsk
+f0dp98	Qinghai
+f0dp124	Novosibirsk
+f0dp101	Qinghai
+f0dp99	Qinghai
+f0dp100	Qinghai
+f0dp93	Qinghai
+f0dp186	Qinghai
+f0dp187	Qinghai
+f0dp92	Qinghai
+f0dp55	Southern China
+f0dp42	Southern China
+f0dp57	Japan
+f0dp56	Japan
+f0dp60	Japan
+f0dp59	Japan
+f0dp123	Japan
+f0dp58	Japan
+f0dp174	Indonesia
+f0dp117	Northern China
+f0dp118	Northern China
+f0dp169	Indonesia
+f0dp172	Indonesia
+f0dp171	Indonesia
+f0dp170	Indonesia
+f0dp173	Indonesia
+f0dp49	Northern China
+f0dp165	Southern China
+f0dp95	Southern China
+f0dp132	Southern China
+f0dp133	Southern China
+f0dp96	Japan
+f0dp164	Southern China
+f0dp91	Northern China
+f0dp4	Southern China
+f0dp17	Southern China
+f0dp16	Southern China
+f0dp15	Southern China
+f0dp6	Southern China
+f0dp13	Southern China
+f0dp14	Southern China
+f0dp3	Southern China
+f0dp12	Southern China
+f0dp11	Southern China
+f0dp10	Southern China
+f0dp21	Southern China
+f0dp20	Southern China
+f0dp8	Southern China
+f0dp9	Southern China
+f0dp7	Southern China
+f0dp22	Southern China
+f0dp19	Southern China
+f0dp5	Southern China
+f0dp2	Southern China
+f0dp1	Southern China
+f0dp51	Northern China
+f0dp48	Southern China
+f0dp52	Northern China
+f0dp44	Southern China
+f0dp121	Vietnam
+f0dp23	Vietnam
+f0dp115	Thailand
+f0dp116	Thailand
+f0dp127	Thailand
+f0dp126	Thailand
+f0dp175	Vietnam
+f0dp45	Vietnam
+f0dp70	Thailand
+f0dp71	Thailand
+f0dp61	Vietnam
+f0dp89	Thailand
+f0dp87	Thailand
+f0dp88	Thailand
+f0dp90	Thailand
+f0dp66	Thailand
+f0dp176	Vietnam
+f0dp178	Vietnam
+f0dp62	Vietnam
+f0dp114	Vietnam
+f0dp69	Thailand
+f0dp81	Thailand
+f0dp112	Thailand
+f0dp67	Thailand
+f0dp68	Thailand
+f0dp65	Thailand
+f0dp63	Thailand
+f0dp64	Thailand
+f0dp109	Thailand
+f0dp83	Thailand
+f0dp85	Thailand
+f0dp86	Thailand
+f0dp80	Thailand
+f0dp107	Thailand
+f0dp111	Thailand
+f0dp106	Thailand
+f0dp110	Thailand
+f0dp108	Thailand
+f0dp102	Thailand
+f0dp104	Thailand
+f0dp113	Thailand
+f0dp73	Thailand
+f0dp84	Thailand
+f0dp76	Thailand
+f0dp78	Thailand
+f0dp82	Thailand
+f0dp103	Thailand
+f0dp105	Thailand
+f0dp77	Thailand
+f0dp72	Thailand
+f0dp74	Thailand
+f0dp75	Thailand
+f0dp79	Thailand
+f0dp31	Southern China
+f0dp29	Southern China
+f0dp18	Southern China
+f0dp36	Northern China
+f0dp28	Southern China
+f0dp26	Southern China
+f0dp40	Southern China
+f0dp43	Southern China
+f0dp168	Southern China
+f0dp46	Southern China
+f0dp47	Southern China
+f0dp97	Southern China
+f0dp34	Northern China
+f0dp41	Northern China
+f0dp35	Northern China
+f0dp181	Northern China
+f0dp32	Southern China
+f0dp24	Southern China
+f0dp25	Southern China
+f0dp119	Northern China
+f0dp38	Southern China
+f0dp39	Southern China
+f0dp33	Northern China
+f0dp37	Southern China
+f0dp27	Southern China
+f0dp180	Northern China
+f0dp190	Southern China
+intNode1	Southern China
+intNode2	Southern China
+intNode3	Southern China
+intNode4	Southern China
+intNode5	Southern China
+intNode6	Southern China
+intNode7	Southern China
+intNode8	Southern China
+intNode9	Southern China
+intNode10	Southern China
+intNode11	Southern China
+intNode12	Southern China
+intNode13	Southern China
+intNode14	Southern China
+intNode15	Southern China
+intNode16	Southern China
+intNode17	Southern China
+intNode18	Southern China
+intNode19	Southern China
+intNode20	Southern China
+intNode21	Southern China
+intNode22	Southern China
+intNode23	Southern China
+intNode24	Southern China
+intNode25	Southern China
+intNode26	Southern China
+intNode27	Southern China
+intNode28	Vietnam
+intNode29	Vietnam
+intNode30	Thailand
+intNode31	Thailand
+intNode32	Thailand
+intNode33	Vietnam
+intNode34	Vietnam
+intNode35	Vietnam
+intNode36	Thailand
+intNode37	Thailand
+intNode38	Thailand
+intNode39	Thailand
+intNode40	Thailand
+intNode41	Thailand
+intNode42	Thailand
+intNode43	Thailand
+intNode44	Thailand
+intNode45	Thailand
+intNode46	Thailand
+intNode47	Thailand
+intNode48	Vietnam
+intNode49	Vietnam
+intNode50	Thailand
+intNode51	Thailand
+intNode52	Thailand
+intNode53	Thailand
+intNode54	Thailand
+intNode55	Thailand
+intNode56	Thailand
+intNode57	Thailand
+intNode58	Thailand
+intNode59	Thailand
+intNode60	Thailand
+intNode61	Thailand
+intNode62	Thailand
+intNode63	Thailand
+intNode64	Thailand
+intNode65	Thailand
+intNode66	Thailand
+intNode67	Thailand
+intNode68	Thailand
+intNode69	Thailand
+intNode70	Thailand
+intNode71	Thailand
+intNode72	Thailand
+intNode73	Thailand
+intNode74	Thailand
+intNode75	Thailand
+intNode76	Thailand
+intNode77	Thailand
+intNode78	Thailand
+intNode79	Thailand
+intNode80	Southern China
+intNode81	Southern China
+intNode82	Southern China
+intNode83	Southern China
+intNode84	Southern China
+intNode85	Southern China
+intNode86	Southern China
+intNode87	Southern China
+intNode88	Southern China
+intNode89	Southern China
+intNode90	Southern China
+intNode91	Southern China
+intNode92	Southern China
+intNode93	Southern China
+intNode94	Southern China
+intNode95	Southern China
+intNode96	Southern China
+intNode97	Southern China
+intNode98	Southern China
+intNode99	Southern China
+intNode100	Southern China
+intNode101	Southern China
+intNode102	Southern China
+intNode103	Southern China
+intNode104	Southern China
+intNode105	Southern China
+intNode106	Novosibirsk
+intNode107	Novosibirsk
+intNode108	Mongolia
+intNode109	Mongolia
+intNode110	Mongolia
+intNode111	Novosibirsk
+intNode112	Astrakhan
+intNode113	Astrakhan
+intNode114	Astrakhan
+intNode115	Novosibirsk
+intNode116	Novosibirsk
+intNode117	Novosibirsk
+intNode118	Qinghai
+intNode119	Qinghai
+intNode120	Qinghai
+intNode121	Qinghai
+intNode122	Qinghai
+intNode123	Qinghai
+intNode124	Qinghai
+intNode125	Southern China
+intNode126	Southern China
+intNode127	Northern China
+intNode128	Southern China
+intNode129	Japan
+intNode130	Japan
+intNode131	Japan
+intNode132	Japan
+intNode133	Japan
+intNode134	Indonesia
+intNode135	Indonesia
+intNode136	Indonesia
+intNode137	Indonesia
+intNode138	Indonesia
+intNode139	Southern China
+intNode140	Southern China
+intNode141	Southern China
+intNode142	Southern China
+intNode143	Southern China
+intNode144	Southern China
+intNode145	Southern China
+intNode146	Southern China
+intNode147	Southern China
+intNode148	Southern China
+intNode149	Southern China
+intNode150	Southern China
+intNode151	Southern China
+intNode152	Southern China
+intNode153	Southern China
+intNode154	Southern China
+intNode155	Southern China
+intNode156	Southern China
+intNode157	Southern China
+intNode158	Southern China
+intNode159	Southern China
+intNode160	Southern China
+intNode161	Southern China
+intNode162	Southern China
+intNode163	Southern China
+intNode164	Southern China
+intNode165	Southern China
+intNode166	Northern China
+intNode167	Northern China
+intNode168	Northern China
+intNode169	Northern China
+intNode170	Northern China
+intNode171	Northern China
+intNode172	Northern China
+intNode173	Northern China
+intNode174	Northern China
+intNode175	Southern China
+intNode176	Southern China
+intNode177	Southern China
+intNode178	Southern China
+intNode179	Southern China
+intNode180	Southern China
+intNode181	Southern China
+intNode182	Southern China
+intNode183	Southern China
+intNode184	Northern China
+intNode185	Northern China
+intNode186	Northern China
+intNode187	Northern China
+intNode188	Northern China
+intNode189	Northern China
