@@ -55,9 +55,12 @@ The necessary input for this script is:
 
 The two trees that are compared should be inferred for the same taxa. Both the number of leaves and the label at the leaves need to be equal.
 
+Further optional arguments are possible:
+* Adjustment: defines whether distances should be adjusted by the number of paths, i.e. if the cost for each node should be divided by the number of descendant leaves (see the manuscript for details). Needs to be TRUE or FALSE. If the argument is not defined, the default is TRUE. The adjustment is recommended to aid interpretability.
+
 ### 3) Running the script
 
 In the folder where the data is located, the script can be called from the command line using:
-> Rscript path/to/folder/FrechetTreeDistance.R \[prefix1\] \[prefix2\] \[distance matrix\]
+> Rscript path/to/folder/FrechetTreeDistance.R \[prefix1\] \[prefix2\] \[distance matrix\] \[adjustment\]
 
 The discrete Fréchet tree distance between the two given trees is output on the command line.
