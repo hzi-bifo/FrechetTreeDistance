@@ -2,10 +2,11 @@
 
 # This script takes a multiple sequence alignment and a list of locations for each sequence as input.
 # It infers five different phylogentic trees using different methods (Parsimony (Fitch algorithm), NJ, UPGMA, ML (JC and GTR substitution model))
-# and does a phylogeographic reconstruction using parsimony.
+# and does a phylogeographic reconstruction.
 
 # Run this script from the command line using:
-# Rscript create_trees.R [alignment] [locations] [outgroup for rooting]
+# Rscript create_trees.R [alignment] [locations] [outgroup for rooting] [method for ancestral state reconstruction]
+# The last argument is optional. Default is "Parsimony". Possible values are "Parsimony" and "ML".
 
 ### define functions ###
 
@@ -34,6 +35,31 @@ ancestral_reconstruction <- function(phylo, locdat){
   return(list(tree=phylo, annotation=node_annotation))
 }
 
+ml_ancestral_reconstruction <- function(phylo, tipdata){
+  x <- tipdata[phylo$tip.label,]
+  
+  #function doesn't allow values of 0
+  phylo$edge.length[phylo$edge.length <= 0] <- 1e-100
+  ancestral_ace <- ace(x, phylo, type="discrete", method = "ML")
+  #ancestral_ace <- reconstruct(x, phylo, method = "ML")
+  
+  likelihoods <- ancestral_ace$lik.anc
+  n_nodes <- nrow(likelihoods)
+  node_locs <- vector(mode="character", length=n_nodes)
+  for (i in 1:n_nodes){
+    node_locs[i] <- names(which(likelihoods[i,] == max(likelihoods[i,])))
+  }
+  
+  # add internal node IDs
+  node_label <- paste("intNode", seq(1, n_nodes), sep="")
+  phylo$node.label <- node_label
+  
+  # create annotation
+  node_annotation <- data.frame(label=c(phylo$tip.label, phylo$node.label), location=c(x, node_locs))
+  
+  return(list(tree=phylo, annotation=node_annotation))
+}
+
 infer_tree <- function(seq_data, method, model="none"){
   # get distances
   dist <- dist.ml(seq_data) #standard model: JC69, alternative is F81
@@ -45,6 +71,7 @@ infer_tree <- function(seq_data, method, model="none"){
   } else if (method == "Parsimony"){
     start <- upgma(dist) #rooted, UPGMA as starting tree
     phylo <- optim.parsimony(start, seq_data) #optimize using parsimony criterium
+    phylo <- acctran(phylo, seq_data) #get branch lengths using acctran
   } else if (method == "ML"){
     start <- upgma(dist) #rooted, UPGMA as starting tree
     ml <- pml(start, data=seq_data) #get likelihood
@@ -84,6 +111,15 @@ args = commandArgs(trailingOnly=TRUE)
 alignment_file <- args[1]
 locations <- args[2]
 outgroup <- args[3]
+asr_method <- args[4]
+
+# default for ancestral state reconstruction: Parsimony
+if (is.na(asr_method)){
+  asr_method = "Parsimony"
+}
+if (asr_method != "Parsimony" && asr_method != "ML"){
+  stop("Invalid argument. Method for ancestral state reconstruction must be set to 'Parsimony' or 'ML'")
+}
 
 # load alignment as phyDat object
 seq_data <- read.phyDat(alignment_file, format = "fasta")
@@ -148,17 +184,22 @@ locdat <- phyDat(tipdata, type="USER", levels=all_locs)
 # ancestral state reconstruction
 dir.create(file.path(getwd(),"trees"), showWarnings = FALSE) # creates output directory if it doesn't exist
 
-ancestral_UPGMA <- ancestral_reconstruction(rooted_UPGMA, locdat)
+if (asr_method == "Parsimony"){
+  ancestral_UPGMA <- ancestral_reconstruction(rooted_UPGMA, locdat)
+  ancestral_NJ <- ancestral_reconstruction(rooted_NJ, locdat)
+  ancestral_Fitch <- ancestral_reconstruction(rooted_Fitch, locdat)
+  ancestral_MLJC <- ancestral_reconstruction(rooted_MLJC, locdat)
+  ancestral_MLGTR <- ancestral_reconstruction(rooted_MLGTR, locdat)
+} else if (asr_method == "ML"){
+  ancestral_UPGMA <- ml_ancestral_reconstruction(rooted_UPGMA, tipdata)
+  ancestral_NJ <- ml_ancestral_reconstruction(rooted_NJ, tipdata)
+  ancestral_Fitch <- ml_ancestral_reconstruction(rooted_Fitch, tipdata)
+  ancestral_MLJC <- ml_ancestral_reconstruction(rooted_MLJC, tipdata)
+  ancestral_MLGTR <- ml_ancestral_reconstruction(rooted_MLGTR, tipdata)
+}
+
 save_tree(ancestral_UPGMA, "trees/UPGMA")
-
-ancestral_NJ <- ancestral_reconstruction(rooted_NJ, locdat)
 save_tree(ancestral_NJ, "trees/NJ")
-
-ancestral_Fitch <- ancestral_reconstruction(rooted_Fitch, locdat)
 save_tree(ancestral_Fitch, "trees/Parsimony")
-
-ancestral_MLJC <- ancestral_reconstruction(rooted_MLJC, locdat)
 save_tree(ancestral_MLJC, "trees/MLJC")
-
-ancestral_MLGTR <- ancestral_reconstruction(rooted_MLGTR, locdat)
 save_tree(ancestral_MLGTR, "trees/MLGTR")
