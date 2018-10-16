@@ -18,12 +18,14 @@ The necessary input for the pipeline is:
 * [A csv file](https://github.com/hzi-bifo/FrechetTreeDistance/blob/master/Data/Raw/distance.matrix.csv) containing the symmetric distance matrix with distances between all observed locations and including the locations as row and column names.
 * The identifier of the sequence that that will be used to root all trees. This sequence should be an outgroup and is removed from the dataset after rooting.
 
-To run the pipeline on different input data, edit the lines 5 (prefix), 6 (distance matrix) and 7 (root sequence) in [Pipeline.sh](https://github.com/hzi-bifo/FrechetTreeDistance/blob/master/Software/Pipeline.sh).
+To run the pipeline on different input data, edit the lines 5 (prefix), 6 (distance matrix) and 8 (root sequence) in [Pipeline.sh](https://github.com/hzi-bifo/FrechetTreeDistance/blob/master/Software/Pipeline.sh).
 
 ### 3) Running the pipeline 
 
 To run the analysis and replicate all results from the manuscript, change into the folder containing the [raw data](https://github.com/hzi-bifo/FrechetTreeDistance/tree/master/Data/Raw) and run
 > bash path/to/folder/Pipeline.sh
+
+This creates the results using the original dataset and ancestral state reconstruction using parsimony. To perform the analysis with clustered locations, change the distance matrix by uncommenting line 7 in the script and uncomment line 24 for parsimony asr or line 27 for maximum likelihood asr.
 
 ### 4) Output
 
