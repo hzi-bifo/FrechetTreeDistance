@@ -4,6 +4,7 @@
 
 name="Wallace_H5N1_HA"
 distances="distance.matrix.csv"
+#distances="distance.matrix.clustered.csv"
 outgroup="f0dp0"
 
 software_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
@@ -16,7 +17,14 @@ rm -f $distancefile
 # creates .phy and .annotation.txt files for Parsimony, UPGMA, NJ, MLJC, MLGTR
 echo "----- 1 Create trees and infer ancestral character states -----"
 echo
+# original dataset, parsimony asr
 Rscript $software_dir"/create_trees.R" $name".aln" $name".locations.txt" $outgroup
+
+# dataset with clustered locations, parsimony asr (note: use distance matrix with clustered locations)
+#Rscript $software_dir"/create_trees.R" $name".aln" $name".locations.clustered.txt" $outgroup
+
+# dataset with clustered locations, ml asr (note: use distance matrix with clustered locations)
+#Rscript $software_dir"/create_trees.R" $name".aln" $name".locations.clustered.txt" $outgroup "ML"
 
 # calculate pairwise frechet distances
 # the script gets called for each pairwise comparison and results are written to the command line as well as the output file
