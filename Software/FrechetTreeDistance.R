@@ -204,7 +204,8 @@ if (adjustment != TRUE && adjustment != FALSE){
 reference_data <- read_tree(reference)
 test_data <- read_tree(test)
 
-distance_matrix <- as.matrix(read.csv(distances, header = TRUE, row.names = 1, check.names=FALSE))
+distance_matrix <- as.matrix(read.csv(distances, header = TRUE, row.names = 1, check.names=FALSE, na.strings = ""))
+colnames(distance_matrix)[which(is.na(colnames(distance_matrix)))] <- "NA"
 
 ### test input ###
 
